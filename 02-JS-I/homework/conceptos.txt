@@ -1,0 +1,14 @@
+Variable: Una Variable es un espacio donde puedo guardar algo. Cada variable debe tener un nombre y con ese nombre la puedo llamar para que me muestre lo que guardé antes en ella.
+
+String: Son letras, numeros o espacios que al estar encerrados entre comillas se transforman inmediatamente en strings y pueden ser utilizadas por ejemplo para dar el valor de una variable.
+
+Funciones (argumentos, return): Las funciones se utilizan cuando vas a hacer una tarea varias veces, por ejemplo todas las mañanas (te despiertas, desayunas, te bañas, te vistes,) 
+si encerraramos esas tareas entre parentesis y les pusieramos un nombre "buenosDias" ahí tenemos una función y al llamarla con ese nombre un programa puede realizarla muchas veces.
+La funcion "buenosDias" no solo la realizas tú todos los días si no tambien tu hermanita o tu mamá, entonces para que una funcion pueda ser realizada por más de una persona debemos
+usar argumentos (mama, papa, hermana) son argumentos que le podemos pasar a la función para que pueda ser ejecutada por más de una persona.
+Return es el resultado que nos queda de todas esas ordenes que se realizaron dentro de la función, por ejemplo si haces una funcion donde sumas 4 peras y 3 manzanas tienes como
+resultado 7 frutas frutas=7, ese resultado lo puede utilizar el programa para otra tarea.
+
+Declaraciones if: Es como cuando tu mamá te dice "Si te terminas toda la sopa te doy postre", en caso de que te termines la sopa obtienes el postre, si no no tienes nada.
+
+Valores booleanos (true, false): Un booleano solo tiene dos opciones: Falso o Verdadero, si en clase de matematica te preguntan 8 es mayor que 6, tu respondes "falso" ahi tines un valor booleano.
