@@ -1,0 +1,36 @@
+for: Son un conjunto de instrucciones que queremos que se repitan un determinado numero de veces. Llevandolo a ejemplos de la vida real,
+lo podemos comparar con tu clase de educación fisica. El profesor te pide que corras 50 metros, despues hagas 7 sentadillas, te devuelvas
+corriendo esos 50 metros y finalices haciendo 7 abdominales; y te dice que hagas 4 rondas de esta serie de ejercicios. Pues cada vez
+que hagas estas tareas repetitivas y finalices una ronda vas a ir contando 1, 2, 3, hasta que llegues a 4 y ahi ya no haces más, ya has finalizado.
+Llevando esta a codigo seria algo asi:
+
+for (i=0;i<=4;i++) { 
+	50 metros;
+	7 sentadillas;
+	50 metros;
+	7 abdominales;
+}
+
+
+&&, ||, !: Son condiciones que se deben cumplir para realizar una tarea. 
+En el caso de &&, significa AND o "Y" en español, se deben cumplir ambas condiciones o más condiciones; por ejemplo, el sabado puedes ir a jugar futbol si esta semana
+organizas tu cuarto y terminas tu taller de matematicas, solo si se cumplen ambas condiciones se realiza esa tarea de jugar futbol.
+Llevandolo al codigo seria algo asi:
+if (( organizas tu cuarto === true ) && ( terminas tu taller de matematicas === true )){
+ puedes ir a jugar futbol; //solo si se cumplen ambas condiciones
+}
+
+En el caso de ||, significa OR o "O" en español, se deben cumplir al menos 1 de 2 condiciones o más condiciones; por ejemplo, el sabado puedes ir a jugar futbol si 
+esta semana organizas tu cuarto o terminas tu taller de matematicas, si realizas 1 de las 2, puedes ir el sabado a jugar futbol.
+Llevandolo al codigo seria algo asi:
+if (( organizas tu cuarto === true ) || ( terminas tu taller de matematicas === true )){
+ puedes ir a jugar futbol; //Si se cumple al menos 1 de las condiciones
+}
+
+El simbolo ! se utiliza para negar algo por ejemplo sabemos que 5 es mayor que 3 (5 > 3) y podemos usarlo como condicion, si 5 es mayor que 3
+realiza una tarea, pero si lo antecedemos con el simbolo !(5 > 3) es como si estuvieramos negando esa condicion, en ese caso la tarea se realizaria
+si 5 no es mayor que 3.
+Llevando esto a codigo seria algo asi:
+if (!(5 > 3)){
+ //Sabemos que 5 es mayor que 3 pero como lo estamos negando con el simbolo !, esta instrucción no se ejecutará.
+}

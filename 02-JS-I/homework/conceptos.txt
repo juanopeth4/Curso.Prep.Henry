@@ -1,14 +1,58 @@
 Variable: Una Variable es un espacio donde puedo guardar algo. Cada variable debe tener un nombre y con ese nombre la puedo llamar para que me muestre lo que guardé antes en ella.
+Ejemplo:
+var ahorroSemana = 1000;
+
 
 String: Son letras, numeros o espacios que al estar encerrados entre comillas se transforman inmediatamente en strings y pueden ser utilizadas por ejemplo para dar el valor de una variable.
+Ejemplo:
+'Esto es un string';
+
 
 Funciones (argumentos, return): Las funciones se utilizan cuando vas a hacer una tarea varias veces, por ejemplo todas las mañanas (te despiertas, desayunas, te bañas, te vistes,) 
-si encerraramos esas tareas entre parentesis y les pusieramos un nombre "buenosDias" ahí tenemos una función y al llamarla con ese nombre un programa puede realizarla muchas veces.
+si encerraramos esas tareas entre llaves y les pusieramos un nombre "buenosDias" ahí tenemos una función y al llamarla con ese nombre un programa puede realizarla muchas veces.
+Llevandolo al codigo sería:
+
+fuction buenosDias() {
+	despertar;
+	desayunar;
+	bañarse; 
+	vestirse;
+}
+
 La funcion "buenosDias" no solo la realizas tú todos los días si no tambien tu hermanita o tu mamá, entonces para que una funcion pueda ser realizada por más de una persona debemos
 usar argumentos (mama, papa, hermana) son argumentos que le podemos pasar a la función para que pueda ser ejecutada por más de una persona.
+Llevandolo al codigo sería:
+
+fuction buenosDias(miFamiliar) {
+	despertar + (miFamiliar);
+	desayunar + (miFamiliar);
+	bañarse + (miFamiliar); 
+	vestirse + (miFamiliar);
+}
+var miembroFamilia = 'Papá';
+buenosDias(miembroFamilia); //llamo la funcionón pasandole el argumento y en este caso sería 'Papá' quien haría las tareas de la función.
+
+
 Return es el resultado que nos queda de todas esas ordenes que se realizaron dentro de la función, por ejemplo si haces una funcion donde sumas 4 peras y 3 manzanas tienes como
-resultado 7 frutas frutas=7, ese resultado lo puede utilizar el programa para otra tarea.
+resultado 7 frutas, ese resultado lo puede utilizar el programa para otra tarea.
+Llevandolo al codigo sería:
+
+fuction sumaFrutas() {
+	var pera = 4;
+	var manzana = 3;
+
+	return pera + manzana;
+}
 
 Declaraciones if: Es como cuando tu mamá te dice "Si te terminas toda la sopa te doy postre", en caso de que te termines la sopa obtienes el postre, si no no tienes nada.
+Llevandolo al codigo sería:
 
-Valores booleanos (true, false): Un booleano solo tiene dos opciones: Falso o Verdadero, si en clase de matematica te preguntan 8 es mayor que 6, tu respondes "falso" ahi tines un valor booleano.
+if (terminasSopa === true ) {
+	tienesPostre;
+}
+
+Valores booleanos (true, false): Un booleano solo tiene dos opciones: Falso o Verdadero, si en clase de matematica te preguntan 6 es mayor que 8, tu respondes "falso" ahi tines un valor booleano.
+Llevandolo al codigo sería:
+
+6 > 8;
+False
