@@ -1,0 +1,14 @@
+Arrays: Es una lista ordenada de elementos o cosas, que al estar ordenada podemos llamar cada uno de esos elementos los cuando necesitemos.
+Llevandolo a un ejemplo de la vida diaria, un Array es como un closet con cajones de un closet, en donde guardas cosas. Al closet
+le pones un nombre y cada cajon tiene un numero asignado, de izquierda a derecha empezando por el 0, 1, 2, 3... entonces cuando quieras 
+saber que hay en el cajon 1 lo puedes hacer con el nombre del closet y el numero del cajon.
+Por ejemplo:
+
+var closetMartin = ['zapatos', 'correas', 'camisas', 'pantalones'];
+//cada , separa un cajon del otro
+
+closetMartin[0];
+// Entre [ ] ponemos el numero del cajon, en este caso le estamos pidiendo que nos muestre el 0 por lo que nos mostraria zapatos
+
+closetMartin[2];
+//Nos mostraria camisas
