@@ -1,0 +1,58 @@
+Objetos: Un objeto es una colección de cosas que guardamos bajo un nombre, y con ese nombre los podemos llamar cuando los necesitemos.
+Para entenderlo podemos escribir un listado con algunas de tus caracteristicas, como por ejemplo, tu nombre, cuantos años tienes, tu
+comida favorita y el anime que mas te gusta ver. A esta colección de propiedades les pondremos como nombre "caracteristicasMati".
+Nuestra lista sería más o menos asi:
+
+caracteristicasMati:
+Mati: 12 años, pizza, dragol ball z
+
+Llevandolo a codigo para que nos funcione como un objeto sería:
+
+var caracteristicasMati = {
+	nombre: 'Mati',
+	edad: 8,
+	comida: 'pizza',
+	anime: 'Dragon Ball Z'
+}
+
+Ese es un objeto y para llamar la información que contiene podemos usar el nombre que le asignamos al listado y el nombre de cada caracteristica.
+Ejemplo:
+
+caracteristicasMati.nombre;
+// Mostraría Mati
+caracteristicasMati.anime;
+// Mostraría Dragon Ball Z
+
+Propiedades: Son la sociedad entre un nombre y un valor. En el ejemplo anterior podemos ver las propiedades que son cada una de esas
+caracteristicas con su valor asignado nombre: 'Mati', edad: 8.
+
+Métodos: Cada propiedad puede tener distintos tipos de valores, por ejemplo un nombre, un numero, o un booleano como ya los habiamos
+visto antes, pues tambien puede tener por valor una función, y a las funciones que estan dentro de un objeto se las conoce como Métodos.
+
+Bucle for…in: Lo podemos utilizar para mostrar toda la información que tiene nuestro objeto. Para que funcione debemos crear una variable,
+despues la palabra clave in y a continuación el nombre del objeto. Esto recorrerá cada uno de los elementos del objeto.
+Ejemplo:
+
+for (var clave in caracteristicasMati){
+    console.log(clave);
+    console.log(usuario[clave]);
+}
+Nos mostrará lo siguiente
+nombre
+Mati
+edad
+8
+comida
+pizza
+anime
+Dragon Ball z
+
+Notación de puntos vs notación de corchetes: Son 2 formas las que tenemos para llamar la información de un objeto, una que ya la
+utilizamos, usando el nombre que le asignamos al objeto y el nombre de la propiedad separarados por un .
+caracteristicasMati.nombre
+A esta forma se la conoce como notación de puntos.
+
+Para la notación de corchetes debemos utilizar el nombre que le asignamos al objeto y el nombre de la propiedad pero esta vez
+encerrada entre corchetes y comillas.
+caracteristicasMati['nombre'];
+La ventaja de esa forma es que la podemos usar poner variables entre esos corchetes como lo hicimos en el ejemplo del for in.
