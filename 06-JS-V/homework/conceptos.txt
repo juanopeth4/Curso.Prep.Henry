@@ -1,0 +1,47 @@
+Constructors (de Clases): En la clase anterior estuvimos creando objetos. Un objeto puede tener varias caracteristicas o propiedades que
+se pueden repetir en otros objetos. Por lo cual tendriamos que copiar y pegar varias veces un objeto y cambiarle los valores, esto sería
+muchas lineas de código. Es aquí donde las Clases nos pueden ayudar, ya que sirven como una plantilla que utilizaremos para crear los 
+objetos con esas propiedades que se repiten.
+Por ejemplo podemos crear una Clase de tus compañeros de colegio:
+
+function Companeros(nombre, edad) { //Los nombres de las Clases siempre los pondremos en mayuscula la primera letra
+    this.nombre = nombre;
+    this.edad = edad;
+    this.saludar = function() {
+        return 'Mi nombre es ' + this.nombre + ', mi edad es ' + this.edad + '.';
+    }
+}
+
+let paula = new Companeros('Paula', 11);
+let luis = new Companeros('Luis', 12);
+
+console.log(paula.saludar()); // Mi nombre es Paula, mi edad es 11.
+console.log(luis.saludar()); // Mi nombre es Luis, mi edad es 12.
+	
+
+prototype: Cada vez que creamos una función esta ocupa capacidad de memoria en nuestra computadora, y si tenemos miles de objetos con
+varios métodos va a ser demasiado. Como solución a esto contamos con la propiedad prototype de cada clase, con el cual podemos crear un
+método una sola vez y los objetos que creemos con dicha clase pueden acceder a ese metodo.
+Nuestro programa de compañeros de clase quedaría así: 
+
+function Companeros(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+}
+
+Companeros.prototype.saludar = function(){
+    return 'Mi nombre es ' + this.nombre + ', mi edad es ' + this.edad + '.';
+}
+
+let paula = new Companeros('Paula', 11);
+let luis = new Companeros('Luis', 12);
+
+console.log(paula.saludar()); // Mi nombre es Paula, mi edad es 11.
+console.log(luis.saludar()); // Mi nombre es Luis, mi edad es 12.
+console.log(luis.introduccion()); // Mi nombre es Luis, mi edad es 12.
+
+
+
+
+
+
