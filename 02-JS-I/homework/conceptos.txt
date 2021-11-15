@@ -1,4 +1,4 @@
-Variable: Una Variable es un espacio donde puedo guardar algo. Cada variable debe tener un nombre y con ese nombre la puedo llamar para que me muestre lo que guardé antes en ella.
+|Variable: Una Variable es un espacio donde puedo guardar algo. Cada variable debe tener un nombre y con ese nombre la puedo llamar para que me muestre lo que guardé antes en ella.
 Ejemplo:
 var ahorroSemana = 1000;
 
